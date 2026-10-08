@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="Lab 1"
+        android:textColor="@android:color/white" />
+
+    <!-- 中间主区域：左右分栏，利用宽屏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="Responsive Layout 1" />
+
+        <!-- 彩色四格在宽屏下改为纵向堆叠 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="1" android:background="#FF0000"
+                android:gravity="center" android:text="This" android:textColor="@android:color/white" />
+            <TextView android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="1" android:background="#0000FF"
+                android:gravity="center" android:text="is" android:textColor="@android:color/white" />
+            <TextView android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="1" android:background="#673AB7"
+                android:gravity="center" android:text="my" android:textColor="@android:color/white" />
+            <TextView android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="1" android:background="#FFEB3B"
+                android:gravity="center" android:text="first" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:text="Android Application"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- 底部按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            android:backgroundTint="#673AB7"
+            android:text="Change"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            android:backgroundTint="#673AB7"
+            android:text="Cancel"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
